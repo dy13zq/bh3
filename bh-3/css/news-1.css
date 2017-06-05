@@ -1,0 +1,13 @@
+section#main{
+	margin: 0 auto;
+}
+div.content{
+	text-align: left;
+}
+div.content
+div.big-bg>h2{
+    text-align: center;
+    font-size: 30px;
+    transform: scale(1);
+    font-weight: normal;
+}

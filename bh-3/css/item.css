@@ -1,0 +1,86 @@
+.section1,.section2,.section3,.section4,.section5{
+	overflow: hidden;
+	position: relative;
+	color: white;
+}
+section.section1{
+	height: 1000px;
+	background: url(../img/item/game_1_bg.jpg) no-repeat center;
+}
+section.section1>div.back1{
+	width: 1349px;
+	height: 1000px;
+	background: url(../img/item/section_1_fg_1.png);
+	animation: back1 60s;
+	position:absolute;
+	animation-iteration-count: infinite;
+}
+@keyframes back1{
+	from{left: 1000px;}
+	to{left: -1000px;}
+}
+section.section1>div.back2{
+	width: 1349px;
+	height: 1000px;
+	background: url(../img/item/section_1_fg_2.png);
+	animation: back2 30s;
+	position: absolute;
+	animation-iteration-count: infinite;
+}
+@keyframes back2{
+	from{left: 1000px;}
+	to{left: -1000px;}
+}
+
+section.section1>div.title{
+	padding: 120px 0 0 260px;
+}
+section.section1>div.title>h1{
+	font-size: 55px;
+	transform: skew(-10deg);
+	animation: h12 1.5s;
+	position: relative;
+}
+@keyframes h12{
+	from{left: 500px;opacity: 0;}
+	to{left: 0;}
+}
+section.section1>div.title>h1>span{
+	padding: 90px;
+}
+section.section1>div.title>ul{
+	padding-top: 50px;
+	font-size: 25px;
+	transform: skew(-10deg);
+	animation: title1 1s;
+	animation-delay: 2s;
+	position: relative;
+}
+@keyframes title1{
+	from{left: 500px;opacity: 0;}
+	to{left: 0;}
+}
+section.section1>div.title>ul>li{
+	transform: skew(10deg);
+	line-height: 35px;
+}
+section.section2{
+	height: 1000px;
+	background: url(../img/item/game_2_bg.jpg);
+	position: relative;
+	overflow: hidden;
+}
+section.section3{
+	height: 1000px;
+	background: url(../img/item/game_3_bg.jpg) no-repeat;
+}
+section.section4{
+	height: 800px;
+	background: url(../img/item/game_4_bg.jpg) no-repeat center;
+	background-size: auto 100%;
+}
+section.section5{
+	height: 1000px;
+	background: url(../img/item/game_5_bg.jpg);
+	background-size: auto 100%;
+}

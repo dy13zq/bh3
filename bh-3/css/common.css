@@ -1,0 +1,134 @@
+*{margin: 0;padding: 0;}
+a{text-decoration: none;}
+li{list-style: none;}
+input{outline: none;border: none;}
+body{width: 1349px;margin:  0 auto;position: relative;}
+dl,dt,dd{list-style: none;}
+hr{
+    border: 0;
+    background: #00c3ff;
+    height: 5px;
+}
+div.flow{
+	width: 60px;
+	height: 400px;
+	/*border: 1px solid black;*/
+	position: absolute;
+	left: 50px;
+	top: 120px;
+	z-index: 10;
+}
+ul#flow-wrap{
+	width: 50px;
+	height: 400px;
+	position: fixed;
+}
+ul#flow-wrap>li.mu:hover{
+	width: 300px;
+	background: rgba(255,255,255,0.25);
+	color: black;
+}
+ul#flow-wrap>li{
+	display: block;
+	width: 100%;
+	height: 65px;
+	border-bottom: 2px solid #00C3FF;
+	transition: 1s;
+	overflow: hidden;
+	background: rgba(0,0,0,0.25);
+	font-size: 15px;
+	color: white;
+	cursor: pointer;
+	text-align: center;
+}
+ul#flow-wrap>li>span{
+	line-height: 65px;
+}
+ul#flow-wrap>li>div.flow-box{
+	text-align: center;
+}
+ul#flow-wrap>li>div.flow-box>span.flow-name{
+	display: block;
+	margin-bottom: 10px;
+}
+ul#flow-wrap>li>div.flow-box>audio{
+	position: relative;
+	/*left: 60px;*/
+}
+header{
+	position: relative;
+}
+@media screen and (min-width:800px ) {
+	html{
+		font-size: 10px;
+	}
+}
+/*导航*/
+div.nav{
+	width: 110rem;
+	padding-left: 2.3rem;
+}
+ul.nav-wrap{
+	width: 110rem;
+	position: fixed;
+	top: 1.5rem;
+	z-index: 100;
+	animation: nav1 1s;
+}
+@keyframes nav1{
+	from{top: -10.0rem;opacity: 0;}
+	to{top: 1.5rem;opacity: 1;}
+}
+ul.nav-wrap>li{
+	display: inline-block;
+	margin: 0 0.15rem;
+	background: rgba(0,0,0,0.25);
+	border-radius: 1rem;
+	transform: skew(-10deg);
+}
+li#acv{
+	background:#01BBF7;
+}
+li#acv>a.nav-btn>span{
+	color: black;
+}
+a.nav-btn{
+	display: block;
+	width: 10rem;
+	height: 4.5rem;
+	line-height: 4.5rem;
+	font-size: 1.8rem;
+	font-family: "微软雅黑";
+	border: 0.2rem solid #01BBF7;
+	border-radius: 1rem;
+}
+a.nav-btn:hover{
+	border: 0.2rem solid #FFA500;
+	transition: 0.5s;
+}
+a.nav-btn>span{
+	display: block;
+	transform: skew(10deg);
+	color: white;
+}
+/*页脚*/
+footer{
+	background:url(../img/sys/section_1_bg.jpg) no-repeat center;
+	width: 112.4rem;
+	margin: 0 auto;
+}
+center.footer{
+	background: url(../img/ms-5.jpg) no-repeat center;
+	background-size: 48rem 30rem;
+	padding: 4rem;
+}
+ul.footer-wrap{
+	width: 46rem;
+	background: rgba(0,0,0,0.4);
+	margin: 0 auto;
+}
+ul.footer-wrap>li{
+	font-size: 1.5rem;
+	line-height: 2.5rem;
+	color: white;
+}

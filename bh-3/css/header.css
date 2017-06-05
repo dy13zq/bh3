@@ -1,0 +1,383 @@
+
+header{
+	position: relative;
+}
+section.banner{
+	height: 949px;
+	background:url(../img/section_1_bg_1.jpg)no-repeat center;
+	animation: back 80s;
+	animation-iteration-count: infinite;
+}
+@keyframes back{
+	from{background: url(../img/section_1_bg_1.jpg)no-repeat left;}
+	to{background: url(../img/section_1_bg_1.jpg)no-repeat right;}
+}
+div.banner1{
+	width: 405px;
+	height: 810px;
+	position: absolute;
+	left: 161px;
+	top: 140px;
+	animation: ban1 1s;
+}
+@keyframes ban1{
+	from{left: -500px;}
+	to{left: 161px;}
+}
+div.banner1>img{
+	width: 405px;
+	height: 810px;
+}
+div.banner2{
+	width: 403px;
+	height: 288px;
+	position: absolute;
+	left: 762px;
+	top: 165px;
+	animation: ban2 1.5s;
+}
+@keyframes ban2{
+	from{opacity: 0;}
+	to{opacity: 1.0;}
+}
+div.banner2>img{
+	width: 403px;
+	height: 288px;
+}
+div.banner3{
+	position: absolute;
+	left: 466px;
+	top: 467px;
+	animation: ban3 2s;
+}
+@keyframes ban3{
+	from{opacity: 0;}
+	to{opacity: 1.0;}
+}
+div.banner4{
+	position: absolute;
+	top: 590px;
+	left: 946px;
+	cursor: pointer;
+}
+div.banner4>img{
+	width: 184px;
+	height: 170px;
+	transition: 0.5s;
+}
+div.banner4>img:hover{
+	width: 202.4px;
+	height: 187px;
+	margin: -8px -9px;
+}
+div.none{
+	display: none;
+}
+
+div#contact-wrap{
+	width: 260px;
+	height: 630px;
+	padding: 20px;
+	/*margin: 0 auto;*/
+	position: fixed;
+	top: 1px;
+	left: 48%;
+	border-radius: 10px;
+	background: rgba(255,255,255,0.9);
+	z-index: 1100;
+}
+span#shud{
+	width: 50px;
+	display: block;
+	height: 50px;
+	background: url(../img/close.png) no-repeat center;
+	cursor: pointer;
+}
+div#pic-wrap>img{ 
+	display: block;
+	width: 140px;
+	height: 140px;
+}
+/*媒体中心*/
+section{
+	width: 1349px;
+	position: relative;
+	margin: 0 auto;
+}
+section.media{
+	height: 487px;
+	background: #00c3ff;
+}
+div.none-vcr1{
+	display: none;
+}
+div#pv-vcr{
+	margin-left: 124.5px;
+	position: fixed;
+	top: 0px;
+	/*left: 20%;*/
+	z-index: 1100;
+	overflow: hidden;
+	cursor: pointer;
+}
+div#pv-vcr>video{
+	width: 1100px;
+	height: 630px;
+}
+div.shod1{
+	width: 50px;
+	margin: 0 auto;
+	height: 50px;
+	padding-left: 1050px;
+	background: rgba(0,0,0,0.8);
+	margin-bottom: -20px;
+}
+span#shod1{
+	display: block;
+	width: 50px;
+	height: 50px;
+	background: url(../img/close.png) no-repeat;
+}
+div.pv-wrap{
+	width: 230px;
+	height: 270px;
+	position: absolute;
+	top: -155px;
+	left: 103px;
+	cursor: pointer;
+}
+div.pv-cover{
+	width: 190px;
+	height: 200px;
+	border: 4px solid white;
+	transform: skew(-10deg);
+	border-radius: 20px;
+	overflow: hidden;
+}
+div.pv-title{
+	width: 230px;
+	height: 56px;
+	line-height: 56px;
+	text-align: center;
+	font-size: 22px;
+	position: relative;
+	left: -35px;
+	color: white;
+}
+video.video-left{
+	height: 210px;
+	transform: skew(10deg);
+	position: relative;
+	left: -90px;
+}
+div.cg{
+	cursor: pointer;
+}
+div.pv-mask:hover {
+    background:url(../img/v-2.png) no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+    z-index: 3;
+}
+div.pv-mask {
+	position: absolute;
+    width: 210px;
+    height: 200px;
+    background:url(../img/v-1.png) no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+    transition: 0.5s;
+    z-index: 3;
+}
+/*人物介绍*/
+.close-btn{
+	/*text-align: center;*/
+	margin: 0 auto;
+}
+.btn-img{
+	position: relative;
+	top: -160px;
+	width: 630px;
+	margin: 0 auto;
+	z-index: 2;
+	/*text-align: center;*/
+}
+.btn-img>li{
+	display: inline-block;
+}
+.btn-img>li>a{
+	display: inline-block;
+	width: 136px;
+	height: 136px;
+	border: 2px solid #FFFFFF;
+	border-radius: 20px;
+	transform: skew(-10deg);
+	background: #12c9ff;
+	transition: 0.5s;
+	margin: 5px 6px;
+	overflow: hidden;
+}
+.btn-img>li>a>img{
+	position: relative;
+	left: -20px;
+	width: 130%;
+	transform: skew(10deg);
+}
+.btn-img>li>a:hover{
+	width: 150px;
+	height: 150px;
+	background: #FFE14B;
+	opacity: 0.8;
+	margin: -2px -1px;
+}
+div.cg{
+	position: absolute;
+	left: 1056px;
+	top: -155px;
+}
+video.video-right{
+	height: 210px;
+	transform: skew(10deg);
+	position: relative;
+	left: -90px;
+}
+/*作战咨询*/
+section.fight{
+	padding-top: 40px;
+	height: 654px;
+	background: url(../img/31.jpg) no-repeat center;
+	background-size: auto 100%; 
+}
+center.fight-wrap{
+	margin: 0 6px;
+	padding: 88px 171px 90px;
+}
+div.index-news-top-left{
+	width: 474px;
+	height: 310px;
+	float: left;
+}
+div.index{
+	width: 1010px;
+	background: rgba(0,0,0,0.3);
+	height: 313px;
+	border: 3px solid #263045;
+}
+/*轮播图*/
+div.slider-wrap{
+	overflow: hidden;
+}
+ul.slider-content{
+	width: 10000px;
+}
+ul.slider-content>li{
+	display: inline-block;
+	width: 474px;
+	height: 313px;
+	overflow: hidden;
+	float: left;
+}
+ul.slider-content>li>a>img{
+	width: 474px;
+	height: 317px;
+}
+div.index-news-top-right{
+	width: 515px;
+	height: 310px;
+	float: right;
+}
+/*选项卡*/
+div.jump>ul{
+	font-size: 0;
+	text-align: center;
+	position: relative;
+	top: 20px;
+}
+div.jump>ul>li{
+	display: inline-block;
+	width: 200px;
+	float: left;
+}
+div.jump>ul>li>a>img{
+	transition: 0.5s;
+}
+div.jump>ul>li:hover>a>img{
+	opacity: 0.8;
+}
+div.more{
+	position: absolute;
+	left: 1153px;
+	top: 164px;
+	width: 20px;
+	height: 20px;
+	background: url(../img/more_news.png) no-repeat center;
+	cursor: pointer;
+}
+/*table*/
+div.index-news-top-right{
+	width: 530px;
+}
+div.wrap{
+	margin: 0 20px;
+}
+/*标题*/
+#tab_t{
+	height: 58px;
+	border-bottom:3px solid #4b869f;
+}
+#tab_t>li{
+	float:left;
+	width:86px;
+	/*height:56px;*/
+	line-height:56px;
+	font-size: 20px;
+	color: white;
+	/*margin:0 4px;*/
+	text-align:center;
+	/*cursor:pointer*/
+	cursor: pointer;
+}
+#tab_t>li:hover{
+	color: #74DCFF;
+	transition: all 0.5s;
+}
+#tab_t .act{
+	position:relative;
+	height:56px;
+	color: #74DCFF;
+	background:#3e4963;
+	border-bottom: 3px solid #74dcff;
+}
+/*内容*/
+.hide{display:none;}
+#tab_c{
+	/*border:1px solid #ccc;*/
+	/*border-top:none;*/
+	cursor: pointer;
+}
+ul.tab_c-wrap{
+	text-align: left;
+}
+ul.tab_c-wrap>li{
+	font-size: 15px;
+}
+ul.tab_c-wrap>li>a{
+	height: 41px;
+	line-height: 41px;
+	color: white;
+}
+ul.tab_c-wrap>li>a:hover{
+	color: #74DCFF;
+	transition: 0.5s;
+}
+ul.tab_c-wrap>li>a>p{
+	display: inline-block;
+    float: left;
+    white-space: nowrap;
+    width: 293px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+ul.tab_c-wrap>li>a>span{
+	float: right;
+}

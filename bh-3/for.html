@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/header.css"/>
+		<script src="js/jquery-3.2.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script tytab_te="text/javascript">
+	var ul=document.getElementById("fade");
+	var li=ul.getElementsByTagName("li");		
+				var i=0;
+				var s=$(window).scrollTop();
+				for(i=0;i<li.length;i++){
+						if (s==0) {
+							$(li).fadeOut(1)
+						}else if(s>0){
+							$('#fade>li:eq(i)').fadeIn(1000);
+						}
+				}
+
+		</script>
+		<title></title>
+	</head>
+	<body>
+		<ul id="fade" class="btn-img"style="top: 0px;">
+			<li><a href="role.html"><img src="./img/kiana_pt.png" alt="" /></a></li>
+			<li><a href=""><img src="./img/kiana_c1.png" alt="" /></a></li>
+			<li><a href=""><img src="./img/kiana_c3.png" alt="" /></a></li>
+			<li><a href=""><img src="./img/kiana_c4.png" alt="" /></a></li>
+			<li><a href=""><img src="./img/mei_c1.png" alt="" /></a></li>
+			<li><a href=""><img src="./img/mei_c2.png" alt="" /></a></li>
+			<li><a href=""><img src="./img/mei_c3.png" alt="" /></a></li>
+			<li><a href=""><img src="./img/mei_c4.png" alt="" /></a></li>
+			<li><a href=""><img src="./img/bronya_c1.png" alt="" /></a></li>
+			<li><a href=""><img src="./img/bronya_c2.png" alt="" /></a></li>
+			<li><a href=""><img src="./img/bronya_c3.png" alt="" /></a></li>
+			<li><a href=""><img src="./img/bronya_c4.png" alt="" /></a></li>
+			<li><a href=""><img src="./img/himeko_c1.png" alt="" /></a></li>
+			<li><a href=""><img src="./img/himeko_c2.png" alt="" /></a></li>
+			<li><a href=""><img src="./img/himeko_c3.png" alt="" /></a></li>
+			<li><a href=""><img src="./img/himeko_c4.png" alt="" /></a></li>
+		</ul>
+	</body>
+</html>

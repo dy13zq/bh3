@@ -1,0 +1,253 @@
+/*导航页*/
+section#section{
+	width: 1349px;
+	background: #12C9FF;
+	background-image:url(../img/section_5_bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	overflow: hidden;
+}
+img.top-bottom{
+	display: block;
+	margin: 0 auto;
+}
+div.title{
+	position: relative;
+	left: 200px;
+	text-align: center;
+	padding: 130px 0;
+	color: white;
+	overflow: hidden;
+	animation: title3 1s;
+	animation-timing-function:ease-out;
+	animation-direction: normal;
+	position: relative;
+}
+@keyframes title3{
+	from{left: 700px;opacity: 0;}
+	to{left: 200px;}
+}
+div.title h1{
+	font-size: 60px;
+	transform: skew(-10deg);
+}
+div.title span{
+	font-size:20px;
+	font-weight: 100;
+	color: #AABBCE;
+}
+div.title p{
+	font-size: 28px;
+	padding-top: 60px;
+	line-height: 47px;
+}
+.btn-img{
+	width: 1000px;
+	margin: 0 auto;
+	text-align: center;
+}
+.btn-img>li{
+	display: inline-block;
+}
+.btn-img>li>a{
+	display: inline-block;
+	width: 136px;
+	height: 156px;
+	border: 2px solid #FFFFFF;
+	border-radius: 20px;
+	transform: skew(-10deg);
+	background: #12c9ff;
+	transition: 0.5s;
+	margin: 5px 6px;
+	overflow: hidden;
+}
+.btn-img>li>a>img{
+	position: relative;
+	left: -20px;
+	width: 135%;
+	transform: skew(10deg);
+}
+.btn-img>li>a:hover{
+	width: 150px;
+	height: 170px;
+	background: #FFE14B;
+	opacity: 0.8;
+	margin: -2px -1px;
+}
+div.cg{
+	position: absolute;
+	left: 1056px;
+	top: -155px;
+}
+video.video-right{
+	height: 210px;
+	transform: skew(10deg);
+	position: relative;
+	left: -90px;
+}
+
+/*子页*/
+.section1,.section2{
+	width: 1349px;
+	height: 1000px;
+	background-size: auto 100%;
+}
+hr{
+	height: 3px;
+	background: #74DCFF;
+}
+section.section1{
+	background: url(../img/sys/section_1_bg.jpg) no-repeat center;
+}
+div.name-box{
+	position: absolute;
+	left: 905px;
+	top: 123px;
+	animation: name1 2s;
+}
+@keyframes name1{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+div.name-box>span{
+	height: 15px;
+	display:block;
+	color: #AABBCE;
+	text-align: right;
+	transform: skew(-10deg);
+	font-family:impact;
+	line-height: 15px;
+}
+div.name-box>h1{
+	color: white;
+	text-align: right;
+	font-size: 45px;
+	transform: skew(-10deg);
+}
+div.pic-box{
+	position: absolute;
+	top: 122px;
+	left: 195px;
+	animation: pic1 1s;
+}
+@keyframes pic1{
+	from{left: 700px;opacity: 0;}
+	to{left: 195px;}
+}
+div.name-box>p{
+	text-align: right;
+}
+div.nav-box{
+	height: 150px;
+	position: absolute;
+	top: 330px;
+}
+div.nav-box>ul{
+	width: 1349px;
+}
+div.nav-box>ul li{
+	height: 150px;
+	background:rgba(24,199,254,0.5);
+	border-radius: 10px;
+	transform: skew(-15deg);
+	cursor: pointer;
+	position: relative;
+}
+li.nav-btn-left{
+	float: left;
+	padding-left: 43px;
+	margin-left: 40px;
+}
+li.nav-btn-left div#btn-left{
+	width: 28px;
+	height: 28px;
+	display:block;
+	position: absolute;
+	top: 61px;
+	left: 7px;
+	transform: skew(15deg);
+	background: url(../img/sys/left_arrow.png);
+	z-index: 1;
+}
+li.nav-btn-right{
+	float: right;	
+	padding-right: 43px;
+	margin-right: 40px;
+	position: relative;
+
+}
+li.nav-btn-right div#btn-right{
+	width: 28px;
+	height: 28px;
+	display:block;
+	position: absolute;
+	top: 61px;
+	left: 172px;
+	transform: skew(15deg);
+	background: url(../img/sys/right_arrow.png);
+}
+div.nav-btn{
+	position: relative;
+	top: -7px;
+	width: 160px;
+	height: 160px;
+	border: 2px solid white;
+	border-radius: 10px;
+	background: #18c7fe;
+	overflow: hidden;
+	transition: 0.5s;
+}
+div.nav-btn:hover{
+	width: 180px;
+	height: 180px;
+	margin: -10px;
+}
+div.nav-btn>img{
+	width: 121%;
+	display: block;
+	transform: skew(15deg);
+	position: relative;
+	left: -16px;
+}
+section.section2{
+	background: url(../img/sys/section_2_bg.jpg) no-repeat center;
+	text-align: center;
+	color: white;
+	overflow: hidden;
+}
+section h2{
+	font-size: 45px;
+	padding-top: 60px;
+	transform: skew(-10deg);
+}
+section span{
+	display: block;
+	font-size: 19px;
+	font-family: impact;
+	color: #AABBCE;
+	transform: skew(-10deg);
+}
+section.section2>p{
+	font-size: 24px;
+	line-height: 50px;
+	height: 80px;
+}
+section.section3{
+	background: url(../img/sys/section_3_bg.jpg) repeat-y center;
+	color: white;
+	overflow: hidden;
+	text-align: center;
+	padding-bottom: 100px;
+}
+section.section3>p{
+	width: 1349px;
+	padding: 0 190px;
+}
+ul.text{
+	text-align: left;
+	padding: 0px 190px;
+}
+ul.text>li{
+	margin-top: 40px;
+	font-size: 20px;
+}

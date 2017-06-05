@@ -1,0 +1,313 @@
+body{
+		color: white;
+	text-align: center;
+		
+}
+/*角色卡*/
+section.section1{
+	background: url(../img/kiana_pt/section_1_bg.jpg) no-repeat center;
+	background-size: auto 100%; 
+	height: 1000px;
+	overflow: hidden;
+	position: relative;
+}
+section.section1>div.name{
+	position: relative;
+	top: 100px;
+	padding: 0 200px;
+	text-align: right;
+}
+section.section1>div.name>span#name-e{
+	/*letter-spacing:20px;字间距*/
+	word-spacing: 140px;/*词间距*/
+	display: block;
+	color: #AABBCE;
+	font-size: 15px;
+	line-height: 20px;
+	transform: skew(-10deg);
+	font-family: impact;
+}
+section.section1>div.name>h1#role-name{
+	font-size: 44px;
+	transform: skew(-10deg);
+	line-height: 60px;
+}
+section.section1>div.name>p#role-card{
+	font-size: 22px;
+	transform: skew(-10deg);
+	line-height: 25px;
+	color: #01BEFA;
+}
+div#role-pic{
+	width: 1024px;
+	height: 900px;
+	background: url(../img/role/kiana_c1.png);
+	margin-left: 163px;
+	position: relative;
+	top: -5px;
+}
+/*导航栏开始*/
+div.nav-box{
+	height: 150px;
+	position: absolute;
+	top: 330px;
+}
+div.nav-box>ul{
+	width: 1349px;
+}
+div.nav-box>ul li{
+	height: 150px;
+	background:rgba(24,199,254,0.5);
+	border-radius: 10px;
+	transform: skew(-15deg);
+	cursor: pointer;
+	position: relative;
+}
+li.nav-btn-left{
+	float: left;
+	padding-left: 43px;
+	margin-left: 40px;
+}
+li.nav-btn-left div#btn-left{
+	width: 28px;
+	height: 28px;
+	display:block;
+	position: absolute;
+	top: 61px;
+	left: 7px;
+	transform: skew(15deg);
+	background: url(../img/sys/left_arrow.png);
+	z-index: 1;
+}
+li.nav-btn-right{
+	float: right;	
+	padding-right: 43px;
+	margin-right: 40px;
+	position: relative;
+
+}
+li.nav-btn-right div#btn-right{
+	width: 28px;
+	height: 28px;
+	display:block;
+	position: absolute;
+	top: 61px;
+	left: 172px;
+	transform: skew(15deg);
+	background: url(../img/sys/right_arrow.png);
+}
+div.nav-btn{
+	position: relative;
+	top: -7px;
+	width: 160px;
+	height: 160px;
+	border: 2px solid white;
+	border-radius: 10px;
+	background: #18c7fe;
+	overflow: hidden;
+	transition: 0.5s;
+}
+div.nav-btn:hover{
+	width: 180px;
+	height: 180px;
+	margin: -10px;
+}
+div.nav-btn>img{
+	width: 121%;
+	display: block;
+	transform: skew(15deg);
+	position: relative;
+	left: -16px;
+}
+/*导航栏结束*/
+/*角色简历*/
+div#resume{
+	width: 1349px;
+	height: 200px;
+	background: rgba(0,190,255,0.8);
+	position: absolute;
+	top: 800px;
+}
+div#resume>div#role-vcr{
+	position: absolute;
+	top: -30px;
+	left: 284.5px;
+	height: 200px;
+	width: 310px;
+	border: 5px solid white;
+	border-radius: 20px;
+	transform: skew(-10deg);
+	overflow: hidden;
+	cursor: pointer;
+}
+div#resume>div#role-vcr>div.role-back{
+	width: 350px;
+	height: 240px;
+	transform: skew(10deg);
+	background: url(../img/kiana_pt/cover17.jpg) no-repeat center;
+	background-size: auto 100%;
+	position: relative;
+	left: -20px;
+	top: -10px;
+}
+div#resume>div#role-vcr>div.role-back>div.img-vcr{
+	width: 350px;
+	height: 240px;
+	background:rgba(0,0,0,0.6);
+	background-image: url(../img/kiana_pt/skill_video_mask.png);
+	background-position:0px 20px;
+	transition: 0.5s;
+}
+div#resume>div#role-vcr>div.role-back>div.img-vcr:hover{
+	background: rgba(0,0,0,0);
+	background-image: url(../img/kiana_pt/skill_video_mask_on.png);
+	background-position:40px 20px;
+}
+div#resume>div.role-resume{
+	font-size: 20px;
+	position: absolute;
+	left: 626px;
+	text-align: left;
+	transform: skew(-10deg);
+}
+ul#role-res{
+	padding-top:12.5px ;
+}
+ul#role-res>li{
+	margin: 14px 0;
+	transform: skew(10deg);
+}
+/*角色招式*/
+section.section2{
+	/*height: 1101px;*/
+	background: url(../img/kiana_pt/section_2_bg.jpg) no-repeat center;
+	background-size: auto 100%;
+	overflow: hidden;
+}
+section.section2>h1{
+	padding-top: 60px;
+	font-size: 44px;
+	transform: skew(-10deg);
+}
+section.section2>span{
+	display: block;
+	font-size: 20px;
+	transform: skew(-10deg);
+	font-family: impact;
+	color: #AABBCE;
+}
+/*招式*/
+div.role-skill{
+	width: 1349px;
+	margin: 0 auto;
+	text-align: center;
+}
+div.skill-box>ul{
+	display:inline-block;
+	border: 1px solid #01BEFA;
+	border-radius: 50%;
+	margin: 0 auto;
+	text-align: center;
+}
+div.skill-box>ul:hover{
+	 -webkit-box-shadow: 0 0 15px 5px #01BEFA;   
+ -moz-box-shadow: 0 0 15px 5px #01BEFA;   
+ box-shadow: 0 0 15px 5px #01BEFA;  
+}
+div.skill-box>ul>li{
+	display: block;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin: 7px;
+	background: rgba(0,190,255,0.2);
+	position: relative;
+}
+div.skill-box>ul>li>img{
+	width: 100px;
+}
+div.role-skill>ul.skill-wrap{
+	padding: 100px;
+	font-size: 0;
+}
+div.role-skill>ul.skill-wrap>li{
+	display: inline-block;
+	width: 480px;
+	padding-top: 20px;
+}
+div.skill-box>h1{
+	font-size: 27px;
+	transform: skew(-10deg);
+	font-weight: 100;
+	line-height: 35px;
+}
+/*vcr*/
+div#role-vcr-skill{
+	height: 200px;
+	width: 310px;
+	border: 2px solid white;
+	border-radius: 20px;
+	overflow: hidden;
+	cursor: pointer;
+	margin: 10px auto;
+}
+div#role-vcr-skill:hover{
+		 -webkit-box-shadow: 0 0 15px 5px #01BEFA;   
+ -moz-box-shadow: 0 0 15px 5px #01BEFA;   
+ box-shadow: 0 0 15px 5px #01BEFA; 
+}
+div#role-vcr-skill>div.role-back{
+	width: 350px;
+	height: 240px;
+	background: url(../img/kiana_pt/cover17.jpg) no-repeat center;
+	background-size: auto 100%;
+	position: relative;
+	left: -20px;
+	top: -10px;
+}
+div#role-vcr-skill>div.role-back>div.img-vcr{
+	width: 350px;
+	height: 240px;
+	background:rgba(0,0,0,0.6);
+	background-image: url(../img/kiana_pt/skill_video_mask.png);
+	background-position:0px 20px;
+	transition: 0.5s;
+}
+div#role-vcr-skill>div.role-back>div.img-vcr:hover{
+	background: rgba(0,0,0,0);
+	background-image: url(../img/kiana_pt/skill_video_mask_on.png);
+	background-position:40px 20px;
+}
+/*角色介绍*/
+section.section3{
+	height: 1000px;
+	background: url(../img/kiana_pt/section_3_bg.jpg) no-repeat center;
+	background-size: auto 100%;
+	overflow: hidden;}
+section.section3>h2{
+	margin-top: 50px;
+	font-size: 45px;
+	transform: skew(-10deg);
+}
+section.section3>span{
+	display: block;
+	font-size: 18px;
+	color: #AABBCE;
+	transform: skew(-10deg);
+	font-family: impact;
+}
+}
+ul.role-in{
+	width: 1349px;
+}
+ul.role-in>li{
+	font-size: 23px;
+	line-height: 40px;
+	margin: 50px 200px;
+	text-align: left;
+}
+ul.role-in>li.h1{
+	color: #01BEFA;
+	font-size: 35px;
+	transform: skew(-10deg);

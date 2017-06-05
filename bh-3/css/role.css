@@ -1,0 +1,67 @@
+section#main{
+	width: 1349px;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+}
+hr{
+    border: 0;
+    background: #00c3ff;
+    height: 5px;
+}
+section#section{
+	background: #12C9FF;
+	background-image:url(../img/role/section_1_bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	overflow: hidden;
+	color: white;
+	text-align: center;
+	padding-top: 100px;
+}
+section#section h1{
+	font-size: 47px;
+	transform: skew(-10deg);
+	position: relative;
+}
+section#section span{
+	display: block;
+	font-size: 16px;
+	color: #AABBCE;
+	font-family: impact;
+	transform: skew(-10deg);
+	position: relative;
+}
+section#section p{
+	padding: 25px 0 80px;
+	font-size: 23px;
+	line-height: 35px;
+	position: relative;
+}
+div.role-nav>ul.role-wrap>li{
+	width: 220px;
+	height: 308px;
+	display: inline-block;
+	border: 3px solid white;
+	border-radius: 10px;
+	overflow: hidden;
+	margin: 5px;
+	font-size: 0;
+	transition: 0.5s;
+}
+div.role-nav>ul.role-wrap>li:hover{
+	width: 240px;
+	height: 328px;
+	margin: -5px;
+}
+div.role-nav>ul.role-wrap>li>a>img{
+	width: 100%;
+}
+div.role-nav>ul.role-wrap>li>a>div.role-name{
+	font-size: 18px;
+	width: 100%;
+	color: black;
+	height: 36px;
+	line-height: 36px;
+	background:white;
+}
